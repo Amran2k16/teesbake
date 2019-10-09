@@ -11,7 +11,7 @@ const Hero = props => {
           height: "100vh",
           zIndex: -1,
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photographer.jpg'), url('/static/hero-img.jpg')",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/hero-img.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
         }}
@@ -23,9 +23,9 @@ const Hero = props => {
             className="d-flex flex-column align-items-center"
           >
             <h1 className="text-white">TeesBake</h1>
-            <h5 className="font-weight-light text-center pt-4 text-white">
+            <h6 className="font-weight-light text-center pt-4 text-white">
               Bespoke, handmade, homemade desserts for you and your loved ones
-            </h5>
+            </h6>
           </div>
           <div className="">
             <button

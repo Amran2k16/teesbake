@@ -26,7 +26,7 @@ const Header = () => {
             </li> */}
             <li className="nav-item">
               <a className="nav-link " href="#">
-                Gallery
+                Showcase
               </a>
             </li>
             <li className="nav-item ">

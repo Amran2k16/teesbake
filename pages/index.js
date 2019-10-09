@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import Post from "../components/post";
 import { createClient } from "contentful";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-// import GalleryPicture from "../components/gallery-picture";
+import GalleryPicture from "../components/gallery-picture";
 import Gallery from "../components/gallery";
 
 const client = createClient({
@@ -31,7 +30,7 @@ function HomePage() {
   useEffect(() => {
     async function getPosts() {
       const contentTypes = await fetchContentTypes();
-      const allPosts = await fetchEntriesForContentType(contentTypes[0]);
+      const allPosts = await fetchEntriesForContentType(contentTypes[1]);
       setPosts([...allPosts]);
     }
     getPosts();
@@ -40,7 +39,7 @@ function HomePage() {
   return (
     <Layout>
       <Hero />
-      <Gallery />
+      <Gallery data={posts} />
     </Layout>
   );
 }
