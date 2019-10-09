@@ -3,6 +3,8 @@ import Post from "../components/post";
 import { createClient } from "contentful";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
+// import GalleryPicture from "../components/gallery-picture";
+import Gallery from "../components/gallery";
 
 const client = createClient({
   space: process.env.SPACE_ID,
@@ -38,6 +40,7 @@ function HomePage() {
   return (
     <Layout>
       <Hero />
+      <Gallery />
     </Layout>
   );
 }
