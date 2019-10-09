@@ -1,0 +1,29 @@
+{
+  "name": "teesbake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amran2k16/teesbake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amran2k16/teesbake/issues"
+  },
+  "homepage": "https://github.com/Amran2k16/teesbake#readme",
+  "dependencies": {
+    "contentful": "^7.10.0",
+    "dotenv-webpack": "^1.7.0",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
