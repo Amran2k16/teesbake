@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
-import Head from "next/head";
 import Post from "../components/post";
 import { createClient } from "contentful";
-
-const SPACE = process.env.SPACE_ID;
-const TOKEN = process.env.ACCESS_TOKEN;
+import Layout from "../components/layout";
+import Hero from "../components/hero";
 
 const client = createClient({
-  space: SPACE,
-  accessToken: TOKEN
-  // space: "x0lnab94pxmy",
-  // accessToken: "RU0L9X_wtK44u2ET6GHe3aB3yJW8tlrlPLzsRt94y7k"
+  space: process.env.SPACE_ID,
+  accessToken: process.env.ACCESS_TOKEN
 });
 
 function HomePage() {
@@ -40,28 +36,9 @@ function HomePage() {
   }, []);
 
   return (
-    <>
-      <Head>
-        <title>Next.js + Contentful</title>
-        <link
-          rel="stylesheet"
-          href="https://css.zeit.sh/v1.css"
-          type="text/css"
-        />
-      </Head>
-      {posts.length > 0
-        ? posts.map(p => (
-            <Post
-              alt={p.fields.alt}
-              date={p.fields.date}
-              key={p.fields.title}
-              image={p.fields.image}
-              title={p.fields.title}
-              url={p.fields.url}
-            />
-          ))
-        : null}
-    </>
+    <Layout>
+      <Hero />
+    </Layout>
   );
 }
 
