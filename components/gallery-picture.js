@@ -3,9 +3,9 @@ const GalleryPicture = props => {
     <div className="row justify-content-center">
       {/* <div className=" col-12 col-sm-6 col-lg-4 col-xl-3"> */}
       <div className="">
-        <div className="card border-light mb-3">
+        <div className="card border-light">
           <div className="card-header">
-            <h3 className="text-black">{props.title}</h3>
+            <h5 className="text-black">{props.title}</h5>
           </div>
           <div className="card-body">
             {/* <h5 className="card-title">{props.type} </h5> */}
