@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import GalleryPicture from "../components/gallery-picture";
 import Gallery from "../components/gallery";
+import Orderform from "../components/orderform";
 
 const client = createClient({
   space: process.env.SPACE_ID,
@@ -40,6 +41,7 @@ function HomePage() {
     <Layout>
       <Hero />
       <Gallery data={posts} />
+      <Orderform />
     </Layout>
   );
 }
